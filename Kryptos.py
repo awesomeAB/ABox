@@ -15,7 +15,7 @@ def encrypt(key, rawData):
 				charArray[count1]=codeKeyArray[count2]
 	encryptedData=''.join(charArray)
 	return encryptedData
-
+pk = 1997
 def decrypt(key, encryptedData):
 	keyBase = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*()_+'
 	keyBaseArray = list(keyBase)
@@ -35,9 +35,9 @@ def decrypt(key, encryptedData):
 
 def main():
 	print('Test string: hello world!')
-	ans = encrypt(1234, 'hello world')
+	ans = encrypt(1997, 'hello world')
 	print'Encrypted String: ',ans
-	print'Decrypted String: ',decrypt(1234,ans)
+	print'Decrypted String: ',decrypt(1997,ans)
 
 if  __name__ == '__main__':
 	main()
